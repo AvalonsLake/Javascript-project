@@ -1,0 +1,15 @@
+HTML Errors
+1 - fixed the incorrect stylesheet
+2 - added the missing closing div tag on line 27
+3 - correctly spelled the classNames on line 35
+
+CSS Errors 
+1 - changed the Largeer into Large on line 2
+2 - changed container on line 10 to be spelled correctly
+
+JavaScript Errors 
+1 - 
+2 - 
+3 - when calling the properties of a variable, make sure there's an object assigned to it so that a property can be called 
+4 - use template literals when concatenating to correctly call or display the properties
+5 - the value of Num as a string when it should have been a numeral

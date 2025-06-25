@@ -41,7 +41,9 @@ Instructions:
     * Make sure the variable has been assigned an object before you attempt to access its properties.
     * If you expect the variable to hold an object, you may need to add code that assigns an object to the variable.
 */
-let obj;
+let obj = {
+  title: "object",
+};
 //console.log(obj.property); // TypeError: Cannot read property 'property' of undefined
 
 // 5. Incorrect Object Concatenation
@@ -58,6 +60,7 @@ const user = {
 };
 
 //console.log("User info: " + user); // Output: User info: [object Object]
+//Call correctly with console.log(`User info: ${user.name} ${user.age}`);
 
 // 6. Casting Failure (Incorrect Type Conversion)
 /*
@@ -68,5 +71,5 @@ Instructions:
     * Use functions like `parseInt()` or `parseFloat()` to convert strings to numbers.
     * Be aware that if the string that is being converted to a number, is not a number, then the result will be NaN.
 */
-let num = "10";
+let num = 10;
 //console.log(num + 5); // "105"

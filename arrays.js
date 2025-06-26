@@ -1,5 +1,5 @@
 // array_challenges.js
-
+console.log("Arrays start Here!");
 // Array Challenges 1-5
 
 // Challenge 1: Find Largest Number
@@ -8,6 +8,8 @@
 function findLargestNumber(arr) {
   // Your code here (Hint: Use Math.max(...arr))
   // Example: return Math.max(...arr);
+  let result = Math.max(...arr);
+  return result;
 }
 
 console.log(findLargestNumber([3, 6, 2, 8, 4])); // Expected: 8
@@ -18,6 +20,7 @@ console.log(findLargestNumber([3, 6, 2, 8, 4])); // Expected: 8
 function removeDuplicates(arr) {
   // Your code here (Hint: Use Set to remove duplicates)
   // Example: return Array.from(new Set(arr));
+  return Array.from(new Set(arr));
 }
 
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected: [1, 2, 3, 4, 5]
@@ -28,6 +31,8 @@ console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected: [1, 2, 3, 4, 
 function filterEvenNumbers(arr) {
   // Your code here (Hint: Use the filter method)
   // Example: return arr.filter(num => num % 2 === 0);
+  let filtered = arr.filter((num) => num % 2 === 0);
+  return filtered;
 }
 
 console.log(filterEvenNumbers([1, 2, 3, 4, 5])); // Expected: [2, 4]
@@ -38,6 +43,7 @@ console.log(filterEvenNumbers([1, 2, 3, 4, 5])); // Expected: [2, 4]
 function filterArray(arr, steps) {
   // Your code here (Hint: Use slice and concat methods)
   // Example: return arr.slice(steps).concat(arr.slice(0, steps));
+  return arr.slice(steps).concat(arr.slice(0, steps));
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 2)); // Expected: [3, 4, 5, 1, 2]
@@ -48,5 +54,6 @@ console.log(filterArray([1, 2, 3, 4, 5], 2)); // Expected: [3, 4, 5, 1, 2]
 function rotateArray(arr, steps) {
   // Your code here (Hint: Use slice and concat methods)
   // Example: return arr.slice(arr.length - steps).concat(arr.slice(0, arr.length - steps));
+  return arr.slice(arr.length - steps).concat(arr.slice(0, arr.length - steps));
 }
 console.log(rotateArray([1, 2, 3, 4, 5], 2)); // Expected: [4, 5, 1, 2, 3]
